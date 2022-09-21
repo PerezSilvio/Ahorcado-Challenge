@@ -1,0 +1,153 @@
+body{
+    
+    background-image: url(imagenes/fondoindex.jpg);
+    background-size: cover;
+}
+
+button:hover{
+
+    transform: scale(1.05);
+}
+
+.botonesHome{
+
+    
+    text-align: center;
+    display: block;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    
+    
+}
+
+.btnIniciar,.btnAgregarPal{
+
+    width: 20%;
+    padding: 30px 50px;
+    margin: 0 20px;
+    border-radius: 20px;
+    background-color: #29231d;
+    border: #110f0c solid;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.canvas{
+    display: block;
+    text-align: center;
+    padding: auto auto;
+}
+.horcaCanvas{
+
+    margin-top: 30px;
+    
+}
+
+.botonosJuego{
+    
+    text-align: center;
+}
+
+.botonosJuego button{
+
+    width: 15%;
+    height: 50px;
+    margin: 5px 20px;
+    color: aliceblue;
+    background-color: #29231d;
+    border: #110f0c solid;
+    border-radius: 20px;
+} 
+
+.teclado{
+
+    text-align: center;
+    margin:0 15px;
+    padding: 10px 100px;
+    
+}
+.btnTeclado{
+
+    background-color: #29231d;
+    border: #110f0c solid;
+    color: white;
+    border-radius: 12px;;
+    width: 50px;
+    height: 40px;
+}
+
+.agregar{
+
+    text-align: center;
+    margin-top: 200px;
+    
+    
+}
+
+.inputPalabra{
+
+    width:80%;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em ;
+    font-weight: bold;
+    color:#29231d;
+    border:none;
+    outline: none;
+    background:none;
+    text-align: center;
+    resize: none;
+     
+}
+
+.botonesDiv{
+
+    text-align: center;
+}
+
+.advertencia{
+
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    color: #300f05;
+    font-weight: bolder;
+}
+
+
+.btnAgregar{
+    
+    width: 15%;
+    height: 50px;
+    margin: 20px 20px;
+    color: aliceblue;
+    background-color: #29231d;
+    border: #110f0c solid;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px 10px;
+
+}
+
+
+
+.redes{
+
+    text-align: center;
+    padding: 70px 20px 20px 20px;
+    
+    
+}
+.redes p{
+
+    text-align: center;
+
+}
+ .github,.linkedin{
+
+    width: 35px;
+ }
+ 
+ 

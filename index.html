@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+        
+    <main id="main">
+
+        <section id="sectionInicio">
+
+            <div class="botonesHome" >
+                <a href="#horca">
+                    <button class="btnIniciar" type="submit" id="iniciar-juego" onclick="iniciarJuego()">Iniciar Juego</button>
+        
+                    <button class="btnAgregarPal" type="submit" id="agregar-palabra" onclick="agregarPalabras()">Agregar Palabra</button>
+                </a>
+            </div>
+
+        </section>
+
+        <section id="section">
+
+            <div id="apareceAhorca" class="canvas">
+
+                <canvas id="horca" width="700" height="300" class="horcaCanvas"></canvas>
+                
+            </div>
+            <div class="teclado">
+    
+                <button id="teclaA" class="btnTeclado" type="button" onclick="capturarTeclado('A')">A</button>
+                <button id="teclaB" class="btnTeclado" type="button" onclick="capturarTeclado('B')">B</button>
+                <button id="teclaC" class="btnTeclado" type="button" onclick="capturarTeclado('C')">C</button>
+                <button id="teclaD" class="btnTeclado" type="button" onclick="capturarTeclado('D')">D</button>
+                <button id="teclaE" class="btnTeclado" type="button" onclick="capturarTeclado('E')">E</button>
+                <button id="teclaF" class="btnTeclado" type="button" onclick="capturarTeclado('F')">F</button>
+                <button id="teclaG" class="btnTeclado" type="button" onclick="capturarTeclado('G')">G</button>
+                <button id="teclaH" class="btnTeclado" type="button" onclick="capturarTeclado('H')">H</button>
+                <button id="teclaI" class="btnTeclado" type="button" onclick="capturarTeclado('I')">I</button>
+                <button id="teclaJ" class="btnTeclado" type="button" onclick="capturarTeclado('J')">J</button>
+                <button id="teclaK" class="btnTeclado" type="button" onclick="capturarTeclado('K')">K</button>
+                <button id="teclaL" class="btnTeclado" type="button" onclick="capturarTeclado('L')">L</button>
+                <button id="teclaM" class="btnTeclado" type="button" onclick="capturarTeclado('M')">M</button>
+                <button id="teclaN" class="btnTeclado" type="button" onclick="capturarTeclado('N')">N</button>
+                <button id="teclaÑ" class="btnTeclado" type="button" onclick="capturarTeclado('Ñ')">Ñ</button>
+                <button id="teclaO" class="btnTeclado" type="button" onclick="capturarTeclado('O')">O</button>
+                <button id="teclaP" class="btnTeclado" type="button" onclick="capturarTeclado('P')">P</button>
+                <button id="teclaQ" class="btnTeclado" type="button" onclick="capturarTeclado('Q')">Q</button>
+                <button id="teclaR" class="btnTeclado" type="button" onclick="capturarTeclado('R')">R</button>
+                <button id="teclaS" class="btnTeclado" type="button" onclick="capturarTeclado('S')">S</button>
+                <button id="teclaT" class="btnTeclado" type="button" onclick="capturarTeclado('T')">T</button>
+                <button id="teclaU" class="btnTeclado" type="button" onclick="capturarTeclado('U')">U</button>
+                <button id="teclaV" class="btnTeclado" type="button" onclick="capturarTeclado('V')">V</button>
+                <button id="teclaW" class="btnTeclado" type="button" onclick="capturarTeclado('W')">W</button>
+                <button id="teclaX" class="btnTeclado" type="button" onclick="capturarTeclado('X')">X</button>
+                <button id="teclaY" class="btnTeclado" type="button" onclick="capturarTeclado('Y')">Y</button>
+                <button id="teclaZ" class="btnTeclado" type="button" onclick="capturarTeclado('Z')">Z</button>
+                
+            </div>
+           <div class="botonosJuego">
+                <button onclick="jugarNuevo()">jugar de nuevo</button>
+                <button onclick="volverInicio()">volver</button>
+           </div>
+
+        </section>
+
+        <section id="agregarPalabra">
+
+            <div class="agregar">
+                <textarea autofocus name="textarea" class="inputPalabra"    rows="2" cols="8" maxlength="15" placeholder="ingrese una nueva palabra"></textarea>
+                
+            </div>
+            <div class="botonesDiv">
+                <button class="btnAgregar" onclick="agregarPalabras()">Agregar y Comenzar</button> 
+                <button class="btnAgregar" onclick="volverInicio()">Volver</button>
+            </div>
+            <div class="advertencia">
+                <p>! La palabra no puede contener ni acento ni caracteres especiales</p>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="redes">
+            <div>
+                <a href="https://github.com/PerezSilvio"><img  class="github" src="imagenes/gitHub.png" alt="logo de github" /></a>
+                <a href="https://www.linkedin.com/in/silvio-ivan-perez-522710179/"><img class="linkedin" src="imagenes/linKedin.png" alt="logo de linkedin"/></a>
+            </div>
+
+            <p>©Copyright - Oracle Programa ONE - Silvio Perez </p>
+        </div>
+        
+    </footer>
+   
+    <script src="codeAhorcado.js"></script>
+    <script src="canvas.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
